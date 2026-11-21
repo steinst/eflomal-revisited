@@ -1,0 +1,36 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+
+[project]
+name = "eflomal-revisited"
+description = "A fast, low-memory, clean-room reimplementation of eflomal Bayesian word alignment"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Steinþór Steingrímsson" }]
+dynamic = ["version"]
+keywords = ["word alignment", "eflomal", "ibm models", "gibbs sampling", "machine translation", "nlp"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[project.scripts]
+eflomalr = "eflomalr.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest", "numpy", "ruff"]
+
+[tool.maturin]
+manifest-path = "crates/eflomal-py/Cargo.toml"
+python-source = "python"
+module-name = "eflomalr._core"
+features = ["pyo3/extension-module"]
+
+[tool.ruff]
+line-length = 100

@@ -1,0 +1,17 @@
+eflomal revisited
+Copyright (c) 2026 Steinþór Steingrímsson. Licensed under the Apache License 2.0.
+
+This project is a new, clean-room implementation of the word alignment models of eflomal:
+
+  eflomal, https://github.com/robertostling/eflomal
+  Copyright Robert Östling and contributors. Licensed under the GNU GPL v3.
+
+  Robert Östling and Jörg Tiedemann (2016). Efficient Word Alignment with Markov Chain Monte
+  Carlo. The Prague Bulletin of Mathematical Linguistics 106, 125-146.
+
+  Robert Östling (2015). Bayesian Models for Multilingual Word Alignment. PhD thesis,
+  Stockholm University.
+
+No eflomal source code is included in this repository, and none was used to write it. The
+implementation follows the papers above and eflomal's public documentation (README and --help).
+eflomal was used only as a black-box binary, to compare output quality and performance.

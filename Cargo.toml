@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = ["crates/eflomal-core", "crates/eflomal-py"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["Steinþór Steingrímsson"]
+rust-version = "1.85"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1

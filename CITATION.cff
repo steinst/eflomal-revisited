@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it, and the model it implements (Östling and Tiedemann 2016)."
+title: "eflomal revisited: fast Bayesian word alignment in Rust"
+type: software
+authors:
+  - family-names: "Steingrímsson"
+    given-names: "Steinþór"
+version: "0.1.0"
+date-released: "2026-11-21"
+license: Apache-2.0
+repository-code: "https://github.com/steinst/eflomal-revisited"
+keywords:
+  - word alignment
+  - eflomal
+  - Gibbs sampling
+  - machine translation
+references:
+  - type: article
+    authors:
+      - family-names: "Östling"
+        given-names: "Robert"
+      - family-names: "Tiedemann"
+        given-names: "Jörg"
+    title: "Efficient Word Alignment with Markov Chain Monte Carlo"
+    journal: "The Prague Bulletin of Mathematical Linguistics"
+    volume: 106
+    start: 125
+    end: 146
+    year: 2016
